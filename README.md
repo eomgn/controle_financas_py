@@ -1,21 +1,34 @@
-Primeiro devemos criar o ambiente virtual:
-# Criar
-	# Linux
-		python3 -m venv venv
-	# Windows
-		python -m venv venv
-​
-Após a criação do venv vamos ativa-lo:
-#Ativar
-	# Linux
-		source venv/bin/activate
-	# Windows
-		venv\Scripts\Activate
+## Criar o Ambiente Virtual
 
-# Caso algum comando retorne um erro de permissão execute o código e tente novamente:
+### Linux
+```sh
+python3 -m venv venv
+```
 
+### Windows
+```sh
+python -m venv venv
+```
+
+## Ativar o Ambiente Virtual
+
+### Linux
+```sh
+source venv/bin/activate
+```
+
+### Windows
+```sh
+venv\Scripts\Activate
+```
+
+## Caso algum comando retorne um erro de permissão, execute o código abaixo e tente novamente:
+
+```powershell
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
-​
-Agora vamos fazer a instalação das bibliotecas necessárias:
+```
+
+## Instalação das Bibliotecas Necessárias
+```sh
 pip install sqlmodel
 pip install matplotlib
